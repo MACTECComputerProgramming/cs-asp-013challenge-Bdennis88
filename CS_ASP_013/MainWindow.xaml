@@ -32,7 +32,7 @@
         <CheckBox x:Name="checkBoxSwiss" Content="Swiss (+ $.30)" HorizontalAlignment="Left" Height="25" Margin="373,258,0,0" VerticalAlignment="Top" Width="117"/>
         <CheckBox x:Name="checkBoxPepperJack" Content="PepperJack (+ $.75)" HorizontalAlignment="Left" Height="25" Margin="373,285,0,0" VerticalAlignment="Top" Width="131"/>
         <Button x:Name="labelButton" Content="Order Here" HorizontalAlignment="Left" Height="44" Margin="582,379,0,0" VerticalAlignment="Top" Width="196" FontSize="20" Click="labelButton_Click"/>
-        <Label x:Name="labelSubs" Content="( Your Sub Here )" HorizontalAlignment="Left" Height="60" Margin="10,331,0,0" VerticalAlignment="Top" Width="557" FontSize="16"/>
+        <TextBlock x:Name="txtBlockSubs" Text="( Your Sub Here )" TextWrapping="Wrap" HorizontalAlignment="Left" Height="60" Margin="10,331,0,0" VerticalAlignment="Top" Width="557" FontSize="16"/>
         <RadioButton x:Name="radioButtonHam" Content="Ham" HorizontalAlignment="Left" Height="24" Margin="222,232,0,0" VerticalAlignment="Top" Width="112" RenderTransformOrigin="0.403,0.605" GroupName="Meat"/>
         <RadioButton x:Name="radioButtonSteak" Content="Steak (+ $1.50)" HorizontalAlignment="Left" Height="21" Margin="222,312,0,0" VerticalAlignment="Top" Width="122" GroupName="Meat" RenderTransformOrigin="0.296,1.4"/>
 

@@ -31,84 +31,84 @@ namespace CS_ASP_013
             if (radioButtonSixInch.IsChecked == true)
             {
                 orderTotal += 3.50;
-                labelSubs.Content = " Six Inch, ";
+                txtBlockSubs.Text = " Six Inch, ";
             }
             else
             {
                 orderTotal += 5.00;
-                labelSubs.Content = " Foot Long, ";
+                txtBlockSubs.Text = " Foot Long, ";
             }
 
             if (radioButtonWheat.IsChecked == true)
             {
                 orderTotal += 0;
-                labelSubs.Content += " Wheat Bread, ";
+                txtBlockSubs.Text += " Wheat Bread, ";
             }
              if(radioButtonItalian.IsChecked == true)
 
-                labelSubs.Content += " Italian Bread,";
+                txtBlockSubs.Text += " Italian Bread,";
 
             else if (radioButtonFlatBread.IsChecked == true)
             {
                 orderTotal += 0.50;
-                labelSubs.Content += " Flat bread,";
+                txtBlockSubs.Text += " Flat bread,";
             }
             else if (radioButtonRoastedChicken.IsChecked == true)
 
-                labelSubs.Content += "Roasted Chicken,";
+                txtBlockSubs.Text += "Roasted Chicken,";
 
             else if (radioButtonHam.IsChecked == true)
 
-                labelSubs.Content += " Ham, ";
+                txtBlockSubs.Text += " Ham, ";
 
             else if (radioButtonMeatBall.IsChecked == true)
             {
                 orderTotal += 1.00;
-                labelSubs.Content += " " + "Meatball,";
+                txtBlockSubs.Text += " " + "Meatball,";
             }
             else if (radioButtonSteak.IsChecked == true)
             {
                 orderTotal += 1.50;
-                labelSubs.Content += " " + "Steak,";
+                txtBlockSubs.Text += " " + "Steak,";
             }
             if (checkBoxAmerican.IsChecked == true)
             {
                 orderTotal += 0.25;
-                labelSubs.Content += " " + "American Cheese,";
+                txtBlockSubs.Text += " " + "American Cheese,";
             }
             if (checkBoxSwiss.IsChecked == true)
             {
                 orderTotal += 0.30;
-                labelSubs.Content += " " + "Swiss Cheese,";
+                txtBlockSubs.Text += " " + "Swiss Cheese,";
             }
              if (checkBoxPepperJack.IsChecked == true)
             {
                 orderTotal += 0.75;
-                labelSubs.Content += " " + " PeperJack Cheese,";
+                txtBlockSubs.Text += " " + " PeperJack Cheese,";
             }
             if (checkBoxCucumber.IsChecked == true)
 
-                labelSubs.Content += " " + " Cucumber,";
+                txtBlockSubs.Text += " " + " Cucumber,";
 
              if (checkBoxGreenPepper.IsChecked == true)
             {
                 orderTotal += 0.25;
-                labelSubs.Content += " " + " Green Pepper,";
+                txtBlockSubs.Text += " " + " Green Pepper,";
             }
              if (checkBoxLettuce.IsChecked == true)
             {
                 orderTotal += 0.15;
-                labelSubs.Content += " " + " Lettuce,";
+                txtBlockSubs.Text += " " + " Lettuce,";
             }
              if (checkBoxRedOnion.IsChecked == true)
             {
                 orderTotal += 0.10;
-                labelSubs.Content += " " + "Red Onion";
+                txtBlockSubs.Text += " " + "Red Onion";
             }
              if (checkBoxAllVeggies.IsChecked == true)
             {
                 orderTotal += 0.25;
-                labelSubs.Content += " " + "Cucumber, Green Peper, Lettuce, Red Onion";
+                txtBlockSubs.Text += " " + "Cucumber, Green Peper, Lettuce, Red Onion";
             }
             if (radioButtonFootLong.IsChecked == true &&
                 radioButtonWheat.IsChecked == true &&
@@ -117,11 +117,11 @@ namespace CS_ASP_013
             {
                 
                 orderTotal -= 2.00;
-                labelSubs.Content += " Special *** $2.00 Off " + orderTotal.ToString("C");
+                txtBlockSubs.Text += " Special *** $2.00 Off " + orderTotal.ToString("C");
             }
 
             else
-                    labelSubs.Content += " " + orderTotal.ToString("C");
+                    txtBlockSubs.Text += " " + orderTotal.ToString("C");
 
             
 
